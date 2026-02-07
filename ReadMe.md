@@ -6,6 +6,12 @@ This is the code repository for the IEEE-RAL'26 paper "Super LiDAR Intensity for
 
 Coming soon...
 
+# Dataset Display
+
+![Dataset 1](img/dataset_1_compressed.png)
+
+![Dataset 2](img/dataset2.png)
+
 ### Reference
 
 ```
