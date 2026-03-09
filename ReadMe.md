@@ -13,7 +13,13 @@ Coming soon...
 ![Dataset 2](img/dataset2.png)
 
 
-# Usage:
+## Usage:
+#Data Preparation:
+Generate Intensity Image from ROSbag:
+1.
+2.
+3.
+
 The repository has been tested in Ubuntu 20.04 with ROS Noetic. To set up Super-LiDAR-Intensity, install the dependencies with command lines below.
 1. Dependencies
 
