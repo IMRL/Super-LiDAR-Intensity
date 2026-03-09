@@ -12,6 +12,12 @@ Coming soon...
 
 ![Dataset 2](img/dataset2.png)
 
+
+# Usage:
+The repository has been tested in Ubuntu 20.04 with ROS Noetic. To set up Super-LiDAR-Intensity, install the dependencies with command lines below.
+1. Dependencies
+
+2. 
 ### Reference
 
 ```
