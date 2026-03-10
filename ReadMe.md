@@ -14,16 +14,19 @@ Coming soon...
 
 
 ## Usage:
-#Data Preparation:
-Generate Intensity Image from ROSbag:
-1.
-2.
-3.
+### Data Preparation
 
-The repository has been tested in Ubuntu 20.04 with ROS Noetic. To set up Super-LiDAR-Intensity, install the dependencies with command lines below.
-1. Dependencies
+**Generate intensity / depth images from ROS bag**
 
-2. 
+The `Super` package provides tools to convert LiDAR point clouds into panoramic/virtual-camera intensity / depth images for training and evaluation. 
+### Dependencies
+
+This repository has been tested on **Ubuntu 20.04 + ROS Noetic**. It depends on two upstream ROS packages:
+
+- **FAST-LIO2**: provides real-time LiDAR odometry and the registered point cloud / trajectory (`path_fast_lio`) used by `imaging_lidar_place_recognition` for loop detection and traffic lane detection.
+- **livox_ros_driver2**: official Livox LiDAR ROS driver.
+
+
 ### Reference
 
 ```
