@@ -1,0 +1,604 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Current_scan1
+        - /STD_descriptor1/Namespaces1
+        - /Odometry1/Shape1
+      Splitter Ratio: 0.5
+    Tree Height: 408
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+      - /FPS1
+    Name: Views
+    Splitter Ratio: 0.7397769689559937
+  - Class: rviz/Time
+    Name: Time
+    SyncMode: 0
+    SyncSource: camera _img
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 10
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: false
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 1000
+      Reference Frame: <Fixed Frame>
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: SubMap
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.05000000074505806
+      Style: Flat Squares
+      Topic: /submap
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: false
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 252; 233; 79
+      Max Intensity: 100
+      Min Color: 114; 159; 207
+      Min Intensity: 0
+      Name: SubMapColor
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.05000000074505806
+      Style: Flat Squares
+      Topic: /submap_color
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: false
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: false
+      Autocompute Value Bounds:
+        Max Value: 7.456498622894287
+        Min Value: -0.9262028932571411
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 114; 159; 207
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 114; 159; 207
+      Max Intensity: 4096
+      Min Color: 114; 159; 207
+      Min Intensity: 0
+      Name: SubMapDwz
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.10000000149011612
+      Style: Flat Squares
+      Topic: /submap_dwz
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: false
+      Value: false
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: SubMapSeg
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.05999999865889549
+      Style: Flat Squares
+      Topic: /submap_seg
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /intensity_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Intensity_view
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /range_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Range_view
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Alpha: 0.20000000298023224
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 30
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 255; 255; 255
+      Name: Current_scan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.05000000074505806
+      Style: Flat Squares
+      Topic: /cloud_registered
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: false
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /descriptor_line
+      Name: STD_descriptor
+      Namespaces:
+        {}
+      Queue Size: 1
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: false
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: Link3D_keypoint
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 10
+      Size (m): 1
+      Style: Spheres
+      Topic: /KeyPoint
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /G3reg_ellipsoid
+      Name: G3reg_ellipsoids
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /camera/color/image_raw
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: camera _img
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: compressed
+      Unreliable: false
+      Value: true
+    - Angle Tolerance: 0.10000000149011612
+      Class: rviz/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.30000001192092896
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: false
+      Enabled: true
+      Keep: 1
+      Name: Odometry
+      Position Tolerance: 0.10000000149011612
+      Queue Size: 10
+      Shape:
+        Alpha: 1
+        Axes Length: 2
+        Axes Radius: 0.800000011920929
+        Color: 255; 25; 0
+        Head Length: 0.30000001192092896
+        Head Radius: 0.10000000149011612
+        Shaft Length: 1
+        Shaft Radius: 0.05000000074505806
+        Value: Axes
+      Topic: /Odometry
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /front_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: front
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /back_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: back
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /left_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: left
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /right_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: right
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /dense_intensity_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: dense_intensity
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /dense_intensity_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /dense_depth_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: dense_depth
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Class: rviz/Image
+      Enabled: false
+      Image Topic: /com_dense_intensity_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: compensate_dense_intensity
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: false
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /lane_detect_view
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: detect_results
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: camera_init
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/FPS
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: -0.08460155874490738
+      Position:
+        X: -18.452289581298828
+        Y: -4.357872486114502
+        Z: 3.0204195976257324
+      Roll: 1.261976922961594e-08
+      Target Frame: body
+      Yaw: 0.39381393790245056
+    Saved:
+      - Class: rviz/ThirdPersonFollower
+        Distance: 52.89530563354492
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Field of View: 0.7853981852531433
+        Focal Point:
+          X: 14.934114456176758
+          Y: -8.00117301940918
+          Z: 0
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: ThirdPersonFollower
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 1.0897982120513916
+        Target Frame: camera_init
+        Yaw: -0.02529173530638218
+      - Class: rviz/FPS
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Invert Z Axis: false
+        Name: FPS
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 1.0897983312606812
+        Position:
+          X: 30.023361206054688
+          Y: -8.38288688659668
+          Z: 51.78801727294922
+        Roll: 1.2535372206912143e-07
+        Target Frame: camera_init
+        Yaw: 3.1163010597229004
+      - Class: rviz/ThirdPersonFollower
+        Distance: 28.22698402404785
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Field of View: 0.7853981852531433
+        Focal Point:
+          X: 12.616378784179688
+          Y: -7.109864234924316
+          Z: 0
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: ThirdPersonFollower
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.8947984576225281
+        Target Frame: <Fixed Frame>
+        Yaw: -0.8002987504005432
+      - Class: rviz/FPS
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Invert Z Axis: false
+        Name: FPS
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.46979907155036926
+        Position:
+          X: -16.87251853942871
+          Y: -1.947441577911377
+          Z: 13.90159797668457
+        Roll: 6.45384616859701e-08
+        Target Frame: camera_init
+        Yaw: 0.0631391778588295
+      - Class: rviz/ThirdPersonFollower
+        Distance: 53.66497039794922
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.05999999865889549
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Field of View: 0.7853981852531433
+        Focal Point:
+          X: 22.225059509277344
+          Y: -20.84714126586914
+          Z: -27.195714950561523
+        Focal Shape Fixed Size: true
+        Focal Shape Size: 0.05000000074505806
+        Invert Z Axis: false
+        Name: ThirdPersonFollower
+        Near Clip Distance: 0.009999999776482582
+        Pitch: 0.3447984755039215
+        Target Frame: body
+        Yaw: 2.859731435775757
+Window Geometry:
+  Displays:
+    collapsed: true
+  Height: 2032
+  Hide Left Dock: true
+  Hide Right Dock: true
+  Image:
+    collapsed: false
+  Intensity_view:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd00000004000000000000025f0000022bfc020000000bfb0000001200530065006c0065006300740069006f006e00000001e10000009b000000b000fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000b0fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb0000001c0049006e00740065006e0073006900740079005f007600690065007700000003da0000012a0000002600fffffffb000000100044006900730070006c00610079007300000001a60000022b0000018200fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d00610067006500000004420000003d0000002600fffffffb0000000a0049006d0061006700650100000414000000f0000000000000000000000001000003040000022bfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0056006900650077007300000001a60000022b0000013200fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000e70000001f0fc0100000005fb00000008006c00650066007401000000000000038d0000008d00fffffffb0000001600640065006e00730065005f0064006500700074006801000003990000039f0000010a00fffffffb0000000a0072006900670068007401000007440000038d0000009e00fffffffb00000008006200610063006b0100000add000003930000009b00fffffffb0000000a00560069006500770073030000004e00000080000002e1000001970000000300000e7000000222fc0100000007fb0000000800540069006d00650000000000000004d80000077d00fffffffb0000001600630061006d0065007200610020005f0069006d00670100000000000003830000010500fffffffc0000038f000003a60000011c00fffffffa000000000200000002fb0000001c006400650074006500630074005f0072006500730075006c007400730100000000ffffffff0000002600fffffffb000000340063006f006d00700065006e0073006100740065005f00640065006e00730065005f0069006e00740065006e00730069007400790000000410000001330000002600fffffffb0000001e00640065006e00730065005f0069006e00740065006e00730069007400790100000741000003940000012e00fffffffb0000000a00660072006f006e00740100000ae10000038f000000a200fffffffb0000001400520061006e00670065005f00760069006500770000000914000000a4000000fc00fffffffb0000000800540069006d0065010000000000000450000000000000000000000e700000032a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Range_view:
+    collapsed: false
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 3696
+  X: 144
+  Y: 54
+  back:
+    collapsed: false
+  camera _img:
+    collapsed: false
+  compensate_dense_intensity:
+    collapsed: false
+  dense_depth:
+    collapsed: false
+  dense_intensity:
+    collapsed: false
+  detect_results:
+    collapsed: false
+  front:
+    collapsed: false
+  left:
+    collapsed: false
+  right:
+    collapsed: false

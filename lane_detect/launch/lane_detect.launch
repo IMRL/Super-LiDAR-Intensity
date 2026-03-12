@@ -1,0 +1,19 @@
+<launch>
+   <param name="use_sim_time" value="true" />
+    <node pkg="lane_detect" type="laneAtt_detect" name="laneAtt_detect" output="screen" required="true">
+        <param name="lidar_topic" type="string" value="/livox/lidar" />
+        <param name="odom_topic" type="string" value="/Odometry" />
+        <param name="camera_topic" type="string" value="/camera/color/image_raw/compressed" />
+        <param name="model_path" type="string" value="$(find lane_detect)/model/super_virtual_camera.ts" />
+        <param name="lane_model_path" type="string" value="$(find lane_detect)/model/laneatt/lane.ts" />
+        <param name="imagesave_path" type="string" value="$(find lane_detect)/image_save/" />
+        <param name="image_process" type="bool" value="false" />
+        <param name="frame_window" type="int" value="5" />
+        <param name="saveImg" type="bool" value="false" />
+        <param name="width" type="int" value="480" />
+        <param name="height" type="int" value="240" />
+        <param name="img_w" type="int" value="640" />
+    </node>
+    <node launch-prefix="nice" pkg="rviz" type="rviz" name="lane_detect" args="-d $(find lane_detect)/rviz/lane_detect.rviz" respawn="true"/>
+    <node pkg="tf" type="static_transform_publisher" name="map_to_camera_init"  args="0 0 0 0 0 0 map camera_init 10" />
+</launch>
