@@ -81,7 +81,7 @@ python infer.py --config config_panoramic.example.yaml  --view_type panoramic
 
 ### SuperLidarIntensity for Specific Applications
 
-** Loop Closure in single sequence: **
+**LoopClosure detection for single sequence:**
 
 ```
 cd ~/super_ws
@@ -93,6 +93,28 @@ roslaunch fast_lio mapping_avia.launch
 ```
 roslaunch imaging_lidar_place_recognition run.launch
 ```
+
+```
+rosbag play --pause --clock example.bag
+
+```
+**LoopClosure detection for different sequences:** (eg. day and night)
+```
+cd ~/super_ws
+source devel/setup.zsh
+
+roslaunch fast_lio mapping_avia.launch
+```
+
+```
+roslaunch diff_imaging_lidar_place_recognition run.launch
+```
+
+```
+rosbag play --pause --clock example.bag
+
+```
+
 
 
 
