@@ -1,0 +1,24 @@
+<launch>
+
+    <arg name="project" default="diff_imaging_lidar_place_recognition"/>
+
+    <param name="lio_loop_config_file" type="string" value="$(find diff_imaging_lidar_place_recognition)/config/params.yaml" />
+    <param name="model_path" type="string" value="$(find diff_imaging_lidar_place_recognition)/scripts/weight/super_panoramic.ts" />
+    <param name="single_frame_cloud_path" type="string" value="$(find diff_imaging_lidar_place_recognition)/output_image/single_frame/" />
+    <param name="global_accumulated_cloud_path" type="string" value="$(find diff_imaging_lidar_place_recognition)/output_image/accumulated_cloud_global/" />
+    <param name="local_accumulated_cloud_path" type="string" value="$(find diff_imaging_lidar_place_recognition)/output_image/accumulated_cloud_local/" />
+    <param name="output_image_base" type="string" value="$(find diff_imaging_lidar_place_recognition)/output_image/" />
+
+    <node pkg="$(arg project)"
+          type="$(arg project)_main"
+          name="$(arg project)_main"
+          output="screen"
+          />
+
+    <node pkg="rviz" 
+          type="rviz" 
+          name="$(arg project)_rviz_diff" 
+          args="-d $(find diff_imaging_lidar_place_recognition)/launch/rviz_diff.rviz" 
+          />
+
+</launch>
