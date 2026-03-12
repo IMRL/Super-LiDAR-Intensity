@@ -1,0 +1,36 @@
+view_type: virtual_camera
+
+data:
+  data_root: 
+  coursedic: null
+  finedic: null
+  cdepthdic: null
+  fdepthdic: null
+  comdic: null
+  mode: data_intensity   #data_intensity or data_depth
+
+resolution:
+  height: 256
+  width: 455
+
+train:
+  batch_size: 4
+  epochs: 20
+  lr: 0.0001
+  save_dir: ./ckpt
+  raw_save_dir: null
+  save_every: 4
+  num_workers: 2
+  pin_memory: false
+
+infer:
+  model_path: 
+  base_folder:
+  device: cuda:0
+  input_subdir: data_intensity/test/B
+  output_subdir: data_intensity/test/pred_B
+
+wandb:
+  project: range_panoramic
+
+use_aspp: false

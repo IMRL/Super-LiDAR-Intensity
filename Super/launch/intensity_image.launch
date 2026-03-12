@@ -1,0 +1,20 @@
+<launch>
+  <arg name="bag_folder_path" default="$(find Super)/test_data" doc="Path to folder containing .bag files" />
+
+  <node pkg="Super" type="intensity_image" name="livox_intensity_range_view" output="screen">
+    <param name="bag_folder_path" value="$(arg bag_folder_path)" />
+    <!-- 全景图尺寸 -->
+    <param name="width_range" value="1380" />
+    <param name="height_range" value="240" />
+    <!-- 四视角图尺寸 -->
+    <param name="width_four_view" value="480" />
+    <param name="height_four_view" value="240" />
+
+    <!-- 每种帧数生成的组数 -->
+    <param name="num_groups" value="1" />
+
+    <param name="livox_topic" value="/livox/lidar" />
+    <param name="rotation_angle_y_deg" value="25" />
+    <rosparam param="frame_counts">[1, 5, 10, 500]</rosparam>
+  </node>
+</launch>
