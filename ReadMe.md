@@ -27,6 +27,7 @@ This repository has been tested on **Ubuntu 20.04 + ROS Noetic**.
 - CUDA 12.4
 - OpenMP
 - DBoW3
+- [M-detector](https://github.com/hku-mars/M-detector) (Used for dynamic point filter in application)
 
 ### Build
 ```
