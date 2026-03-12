@@ -32,11 +32,16 @@ This repository has been tested on **Ubuntu 20.04 + ROS Noetic**.
 ## Usage:
 ### Data Preparation
 **Collect ROSbag**
-We provide code for conveniently collecting static Livox data, please refer to [record_rosbag.cpp](https://github.com/IMRL/Super-LiDAR-Intensity/blob/main/Super/src/data_generate/record_rosbag.cpp).
+
+We provide code for conveniently collecting static Livox data. Please refer to [record_rosbag.cpp](https://github.com/IMRL/Super-LiDAR-Intensity/blob/main/Super/src/data_generate/record_rosbag.cpp).
 
 **Generate intensity images from ROS bag**
 
 The `Super` package provides tools to convert LiDAR point clouds into panoramic/virtual-camera intensity images for training and evaluation. 
+
+```
+roslaunch Super intensity_image.launch
+```
 
 
 
