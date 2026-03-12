@@ -13,18 +13,33 @@ Coming soon...
 ![Dataset 2](img/dataset2.png)
 
 
+## 3. Prerequisites
+### 3.1. Ubuntu and ROS
+This repository has been tested on **Ubuntu 20.04 + ROS Noetic**.
+
+### 3.2. Dependencies
+- [Opencv 4.2](https://github.com/opencv/opencv)
+- Eigen3
+- [PCL 1.13.1](https://github.com/PointCloudLibrary/pcl)
+- [FAST-LIO2](https://github.com/hku-mars/FAST_LIO)
+- [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2)
+- [LibTorch 2.4.0（cxx11-abi-shared）](https://docs.pytorch.org/cppdocs/installing.html)
+- CUDA 12.4
+- OpenMP
+- DBoW3
+
+
 ## Usage:
 ### Data Preparation
+**Collect ROSbag**
+We provide code for conveniently collecting static Livox data, please refer to [record_rosbag.cpp](https://github.com/IMRL/Super-LiDAR-Intensity/blob/main/Super/src/data_generate/record_rosbag.cpp).
 
-**Generate intensity / depth images from ROS bag**
+**Generate intensity images from ROS bag**
 
-The `Super` package provides tools to convert LiDAR point clouds into panoramic/virtual-camera intensity / depth images for training and evaluation. 
-### Dependencies
+The `Super` package provides tools to convert LiDAR point clouds into panoramic/virtual-camera intensity images for training and evaluation. 
 
-This repository has been tested on **Ubuntu 20.04 + ROS Noetic**. It depends on two upstream ROS packages:
 
-- **FAST-LIO2**: provides real-time LiDAR odometry and the registered point cloud / trajectory (`path_fast_lio`) used by `imaging_lidar_place_recognition` for loop detection and traffic lane detection.
-- **livox_ros_driver2**: official Livox LiDAR ROS driver.
+
 
 
 ### Reference
