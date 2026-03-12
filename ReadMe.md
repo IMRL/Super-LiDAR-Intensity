@@ -36,6 +36,15 @@ git clone https://github.com/IMRL/Super-LiDAR-Intensity.git
 catkin build
 source ~/super_ws/devel/setup.bash
 ```
+### Setup Python Environment
+
+**Create Conda Environment**
+
+```
+conda env create -f SuperLidarIntensity.yaml -y
+conda activate super
+```
+
 
 ## Usage:
 ### Data Preparation
