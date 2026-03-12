@@ -61,6 +61,25 @@ for intensity image generation.
 roslaunch Super intensity_image.launch
 ```
 
+### Training & Inference
+
+```
+conda activate super
+cd ~/super_ws/src/Super/scripts/panoramic_virtualCamera
+```
+
+for training:
+```
+ python main.py --config config_panoramic.example.yaml
+```
+
+for inference:
+
+```
+python infer.py --config config_panoramic.example.yaml  --view_type panoramic
+```
+
+
 
 
 
