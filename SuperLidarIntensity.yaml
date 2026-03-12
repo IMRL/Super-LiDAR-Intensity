@@ -1,4 +1,4 @@
-name: SuperLidarIntensity
+name: super
 channels:
   - pytorch
   - nvidia
