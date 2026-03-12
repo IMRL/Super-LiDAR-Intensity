@@ -112,12 +112,23 @@ roslaunch diff_imaging_lidar_place_recognition run.launch
 
 ```
 rosbag play --pause --clock example.bag
-
 ```
 
+**Traffic Lane Detection:**
 
+```
+cd ~/super_ws
+source devel/setup.zsh
 
+roslaunch fast_lio mapping_avia.launch
+```
 
+```
+roslaunch lane_detect lane_detect.launch     
+```
+```
+rosbag play --pause --clock example.bag
+```
 
 
 ### Reference
