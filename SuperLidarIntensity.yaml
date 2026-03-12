@@ -1,0 +1,26 @@
+name: SuperLidarIntensity
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+
+  - numpy>=1.22
+  - pillow
+  - pyyaml
+  - matplotlib
+  - tqdm
+
+  - pytorch=2.4
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.4 
+  - ipython
+
+  - pip:
+      - wandb
+      - opencv-python
+
