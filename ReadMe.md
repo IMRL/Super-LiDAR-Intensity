@@ -13,11 +13,11 @@ Coming soon...
 ![Dataset 2](img/dataset2.png)
 
 
-## 3. Prerequisites
-### 3.1. Ubuntu and ROS
+## Prerequisites
+### Ubuntu and ROS
 This repository has been tested on **Ubuntu 20.04 + ROS Noetic**.
 
-### 3.2. Dependencies
+### Dependencies
 - [Opencv 4.2](https://github.com/opencv/opencv)
 - Eigen3
 - [PCL 1.13.1](https://github.com/PointCloudLibrary/pcl)
@@ -28,6 +28,14 @@ This repository has been tested on **Ubuntu 20.04 + ROS Noetic**.
 - OpenMP
 - DBoW3
 
+### Build
+```
+mkdir -p super_ws/src
+cd ~/super_ws/src
+git clone https://github.com/IMRL/Super-LiDAR-Intensity.git
+catkin build
+source ~/super_ws/devel/setup.bash
+```
 
 ## Usage:
 ### Data Preparation
@@ -37,7 +45,8 @@ We provide code for conveniently collecting static Livox data. Please refer to [
 
 **Generate intensity images from ROS bag**
 
-The `Super` package provides tools to convert LiDAR point clouds into panoramic/virtual-camera intensity images for training and evaluation. 
+The `Super` package provides tools to convert LiDAR point clouds into panoramic/virtual-camera intensity images for training and evaluation. We also provide [test_bag] 
+for intensity image generation.
 
 ```
 roslaunch Super intensity_image.launch
