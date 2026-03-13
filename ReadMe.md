@@ -78,6 +78,7 @@ python infer.py --config config_panoramic.example.yaml  --view_type panoramic
 ```
 
 ### SuperLidarIntensity for Specific Applications
+The model weight of "loop closure detection is available at [super_panoramic.ts](https://drive.google.com/drive/folders/1vFmCXLBHj2e9TRRe9iYNyh3NuIm_uOx8?usp=drive_link) and [orbvoc.dbow3](https://drive.google.com/drive/folders/1vFmCXLBHj2e9TRRe9iYNyh3NuIm_uOx8?usp=drive_link). Please place them in the corresponding paths.
 
 **LoopClosure detection for single sequence:**
 
@@ -118,6 +119,7 @@ rosbag play --pause --clock example.bag
 ```
 
 **Traffic Lane Detection:**
+The model weight of "Traffic Lane Detection" is available at [super_virtual_camera.ts](https://drive.google.com/drive/folders/1vFmCXLBHj2e9TRRe9iYNyh3NuIm_uOx8?usp=drive_link) and [lane.ts](https://drive.google.com/drive/folders/1vFmCXLBHj2e9TRRe9iYNyh3NuIm_uOx8?usp=drive_link). Please place them in the corresponding paths.
 
 The ROS bag for "Traffic Lane Detection" is available at [here](https://drive.google.com/drive/folders/1NLGwBSDgIE2wRUS18dtAhKmBjKCYKo0F?usp=drive_link)
 
