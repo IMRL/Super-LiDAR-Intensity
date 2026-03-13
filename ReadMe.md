@@ -4,7 +4,8 @@
 This is the code repository for the IEEE-RAL'26 paper "Super LiDAR Intensity for Robotic Perception"
 [![Super LiDAR Intensity for Robotic Perception](cover.png)](https://youtu.be/C5PahLDyoVY)
 
-Coming soon...
+## News
+-**2026-03-13**: The code, model weights, and data have been released.
 
 # Dataset Display
 
