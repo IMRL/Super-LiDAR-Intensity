@@ -83,7 +83,8 @@ python infer.py --config config_panoramic.example.yaml  --view_type panoramic
 ### SuperLidarIntensity for Specific Applications
 
 **LoopClosure detection for single sequence:**
-The example rosbag for "LoopClosure detection for single sequence" is available at [here](https://drive.google.com/drive/folders/1WWg8NSUVPJSS-lNjUQzvMrvj58Hhm9G8?usp=drive_link)
+
+The example ROS bag for "LoopClosure detection for single sequence" is available at [here](https://drive.google.com/drive/folders/1WWg8NSUVPJSS-lNjUQzvMrvj58Hhm9G8?usp=drive_link)
 
 ```
 cd ~/super_ws
