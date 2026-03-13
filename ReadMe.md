@@ -127,6 +127,7 @@ roslaunch fast_lio mapping_avia.launch
 ```
 roslaunch lane_detect lane_detect.launch     
 ```
+(If you need to filter moving objects, use the M-detector and compile lane_detect_static.cpp)
 ```
 rosbag play --pause --clock example.bag
 ```
