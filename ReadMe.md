@@ -49,9 +49,6 @@ conda activate super
 
 ## Usage:
 ### Data Preparation
-**Collect ROSbag**
-
-We provide code for conveniently collecting static Livox data. Please refer to [record_rosbag.cpp](https://github.com/IMRL/Super-LiDAR-Intensity/blob/main/Super/src/data_generate/record_rosbag.cpp).
 
 **Generate intensity images from ROS bag**
 
@@ -139,9 +136,11 @@ roslaunch lane_detect lane_detect.launch
 rosbag play --pause --clock example.bag
 ```
 
-### Dataset
+### Others
+**Collect ROSbag**
 
-**Coming soon**
+We provide code for conveniently collecting static Livox data. Please refer to [record_rosbag.cpp](https://github.com/IMRL/Super-LiDAR-Intensity/blob/main/Super/src/data_generate/record_rosbag.cpp).
+
 
 ### Reference
 
