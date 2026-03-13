@@ -55,7 +55,7 @@ We provide code for conveniently collecting static Livox data. Please refer to [
 
 **Generate intensity images from ROS bag**
 
-The `Super` package provides tools to convert LiDAR point clouds into panoramic/virtual-camera intensity images for training and evaluation. We also provide [test_bag] 
+The `Super` package provides tools to convert LiDAR point clouds into panoramic/virtual-camera intensity images for training and evaluation. We also provide [test_bag](https://drive.google.com/drive/folders/1WiR9RSpbvhz49bkafG_IJEtGINPY-bzG?usp=sharing) 
 for intensity image generation.
 
 ```
