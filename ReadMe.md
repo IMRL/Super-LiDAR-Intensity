@@ -147,6 +147,10 @@ rosbag play --pause --clock example.bag
 We provide code for conveniently collecting static Livox data. Please refer to [record_rosbag.cpp](https://github.com/IMRL/Super-LiDAR-Intensity/blob/main/Super/src/data_generate/record_rosbag.cpp).
 
 
+### Acknowledgement
+
+Part of the code references the implementation of the [imaging liar place recognition](https://github.com/TixiaoShan/imaging_lidar_place_recognition) and [laneatt](https://github.com/lucastabelini/LaneATT). We thank the authors for their awesome works!
+
 ### Reference
 
 ```
