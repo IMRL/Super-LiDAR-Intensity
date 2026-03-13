@@ -84,7 +84,7 @@ python infer.py --config config_panoramic.example.yaml  --view_type panoramic
 
 **LoopClosure detection for single sequence:**
 
-The example ROS bag for "LoopClosure detection for single sequence" is available at [here](https://drive.google.com/drive/folders/1WWg8NSUVPJSS-lNjUQzvMrvj58Hhm9G8?usp=drive_link)
+The ROS bag for "LoopClosure detection for single sequence" is available at [here](https://drive.google.com/drive/folders/1WWg8NSUVPJSS-lNjUQzvMrvj58Hhm9G8?usp=drive_link)
 
 ```
 cd ~/super_ws
@@ -102,6 +102,9 @@ rosbag play --pause --clock example.bag
 
 ```
 **LoopClosure detection for different sequences:** (eg. day and night)
+
+The ROS bag for "LoopClosure detection for different sequence" is available at [here](https://drive.google.com/drive/folders/1Fzhe0aYcXzEF5BYW42nLrwlsBrD1Cbhs?usp=drive_link)
+
 ```
 cd ~/super_ws
 source devel/setup.zsh
