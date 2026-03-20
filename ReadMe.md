@@ -155,11 +155,12 @@ Part of the code references the implementation of the [imaging liar place recogn
 ### Reference
 
 ```
-@article{gao2025super,
+@article{gao2026super,
   title={Super LiDAR Intensity for Robotic Perception},
-  author={Gao, Wei and Zhang, Jie and Zhao, Mingle and Zhang, Zhiyuan and Kong, Shu and Ghaffari, Maani and Song, Dezhen and Xu, Cheng-Zhong and Kong, Hui},
-  journal={arXiv preprint arXiv:2508.10398},
-  year={2025}
+  author={Gao, Wei and Zhang, Jie and Zhao, Mingle and Zhang, Zhiyuan and Kong, Shu and Ghaffari, Maani and Song, Dezhen and Xu, Chengzhong and Kong, Hui},
+  journal={IEEE Robotics and Automation Letters},
+  year={2026},
+  publisher={IEEE}
 }
 ```
 
